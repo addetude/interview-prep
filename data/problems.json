@@ -160,5 +160,533 @@
    "Two Pointers",
    "String"
   ]
+ },
+ "how-many-numbers-are-smaller-than-the-current-number": {
+  "id": 1365,
+  "title": "How Many Numbers Are Smaller Than the Current Number",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Sorting",
+   "Counting Sort"
+  ]
+ },
+ "minimum-time-visiting-all-points": {
+  "id": 1266,
+  "title": "Minimum Time Visiting All Points",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Math",
+   "Geometry"
+  ]
+ },
+ "contains-duplicate-ii": {
+  "id": 219,
+  "title": "Contains Duplicate II",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Sliding Window"
+  ]
+ },
+ "maximum-average-subarray-i": {
+  "id": 643,
+  "title": "Maximum Average Subarray I",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Sliding Window"
+  ]
+ },
+ "best-time-to-buy-and-sell-stock": {
+  "id": 121,
+  "title": "Best Time to Buy and Sell Stock",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Dynamic Programming"
+  ]
+ },
+ "substrings-of-size-three-with-distinct-characters": {
+  "id": 1876,
+  "title": "Substrings of Size Three with Distinct Characters",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Sliding Window",
+   "Counting"
+  ]
+ },
+ "longest-substring-without-repeating-characters": {
+  "id": 3,
+  "title": "Longest Substring Without Repeating Characters",
+  "difficulty": "Medium",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Sliding Window"
+  ]
+ },
+ "maximum-depth-of-binary-tree": {
+  "id": 104,
+  "title": "Maximum Depth of Binary Tree",
+  "difficulty": "Easy",
+  "tags": [
+   "Tree",
+   "Depth-First Search",
+   "Breadth-First Search",
+   "Binary Tree"
+  ]
+ },
+ "check-if-string-is-a-prefix-of-array": {
+  "id": 1961,
+  "title": "Check If String Is a Prefix of Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Two Pointers",
+   "String"
+  ]
+ },
+ "count-prefixes-of-a-given-string": {
+  "id": 2255,
+  "title": "Count Prefixes of a Given String",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "String"
+  ]
+ },
+ "check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence": {
+  "id": 1455,
+  "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String",
+   "String Matching"
+  ]
+ },
+ "container-with-most-water": {
+  "id": 11,
+  "title": "Container With Most Water",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Two Pointers",
+   "Greedy"
+  ]
+ },
+ "counting-words-with-a-given-prefix": {
+  "id": 2185,
+  "title": "Counting Words With a Given Prefix",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "String",
+   "String Matching"
+  ]
+ },
+ "remove-element": {
+  "id": 27,
+  "title": "Remove Element",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Two Pointers"
+  ]
+ },
+ "plus-one": {
+  "id": 66,
+  "title": "Plus One",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Math"
+  ]
+ },
+ "intersection-of-two-arrays": {
+  "id": 349,
+  "title": "Intersection of Two Arrays",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Two Pointers",
+   "Binary Search",
+   "Sorting"
+  ]
+ },
+ "intersection-of-two-arrays-ii": {
+  "id": 350,
+  "title": "Intersection of Two Arrays II",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Two Pointers",
+   "Binary Search",
+   "Sorting"
+  ]
+ },
+ "first-letter-to-appear-twice": {
+  "id": 2351,
+  "title": "First Letter to Appear Twice",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Bit Manipulation",
+   "Counting"
+  ]
+ },
+ "binary-tree-inorder-traversal": {
+  "id": 94,
+  "title": "Binary Tree Inorder Traversal",
+  "difficulty": "Easy",
+  "tags": [
+   "Stack",
+   "Tree",
+   "Depth-First Search",
+   "Binary Tree"
+  ]
+ },
+ "binary-tree-preorder-traversal": {
+  "id": 144,
+  "title": "Binary Tree Preorder Traversal",
+  "difficulty": "Easy",
+  "tags": [
+   "Stack",
+   "Tree",
+   "Depth-First Search",
+   "Binary Tree"
+  ]
+ },
+ "score-of-a-string": {
+  "id": 3110,
+  "title": "Score of a String",
+  "difficulty": "Easy",
+  "tags": [
+   "String"
+  ]
+ },
+ "percentage-of-letter-in-string": {
+  "id": 2278,
+  "title": "Percentage of Letter in String",
+  "difficulty": "Easy",
+  "tags": [
+   "String"
+  ]
+ },
+ "reshape-the-matrix": {
+  "id": 566,
+  "title": "Reshape the Matrix",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Matrix",
+   "Simulation"
+  ]
+ },
+ "concatenation-of-array": {
+  "id": 1929,
+  "title": "Concatenation of Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Simulation"
+  ]
+ },
+ "remove-duplicates-from-sorted-list": {
+  "id": 83,
+  "title": "Remove Duplicates from Sorted List",
+  "difficulty": "Easy",
+  "tags": [
+   "Linked List"
+  ]
+ },
+ "type-of-triangle": {
+  "id": 3024,
+  "title": "Type of Triangle",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Math",
+   "Sorting",
+   "Polygons"
+  ]
+ },
+ "find-words-containing-character": {
+  "id": 2942,
+  "title": "Find Words Containing Character",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "String"
+  ]
+ },
+ "divisible-and-non-divisible-sums-difference": {
+  "id": 2894,
+  "title": "Divisible and Non-divisible Sums Difference",
+  "difficulty": "Easy",
+  "tags": [
+   "Math"
+  ]
+ },
+ "build-array-from-permutation": {
+  "id": 1920,
+  "title": "Build Array from Permutation",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Simulation"
+  ]
+ },
+ "length-of-last-word": {
+  "id": 58,
+  "title": "Length of Last Word",
+  "difficulty": "Easy",
+  "tags": [
+   "String"
+  ]
+ },
+ "the-two-sneaky-numbers-of-digitville": {
+  "id": 3289,
+  "title": "The Two Sneaky Numbers of Digitville",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Math"
+  ]
+ },
+ "valid-parentheses": {
+  "id": 20,
+  "title": "Valid Parentheses",
+  "difficulty": "Easy",
+  "tags": [
+   "String",
+   "Stack",
+   "Bracket Sequences"
+  ]
+ },
+ "move-zeroes": {
+  "id": 283,
+  "title": "Move Zeroes",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Two Pointers"
+  ]
+ },
+ "reverse-string": {
+  "id": 344,
+  "title": "Reverse String",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String"
+  ]
+ },
+ "jewels-and-stones": {
+  "id": 771,
+  "title": "Jewels and Stones",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String"
+  ]
+ },
+ "find-target-indices-after-sorting-array": {
+  "id": 2089,
+  "title": "Find Target Indices After Sorting Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Binary Search",
+   "Sorting"
+  ]
+ },
+ "binary-search": {
+  "id": 704,
+  "title": "Binary Search",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Binary Search"
+  ]
+ },
+ "single-number": {
+  "id": 136,
+  "title": "Single Number",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Bit Manipulation"
+  ]
+ },
+ "reverse-linked-list": {
+  "id": 206,
+  "title": "Reverse Linked List",
+  "difficulty": "Easy",
+  "tags": [
+   "Linked List",
+   "Recursion"
+  ]
+ },
+ "reverse-vowels-of-a-string": {
+  "id": 345,
+  "title": "Reverse Vowels of a String",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String"
+  ]
+ },
+ "two-sum-ii-input-array-is-sorted": {
+  "id": 167,
+  "title": "Two Sum II - Input Array Is Sorted",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Two Pointers",
+   "Binary Search"
+  ]
+ },
+ "min-stack": {
+  "id": 155,
+  "title": "Min Stack",
+  "difficulty": "Medium",
+  "tags": [
+   "Stack",
+   "Design"
+  ]
+ },
+ "keep-multiplying-found-values-by-two": {
+  "id": 2154,
+  "title": "Keep Multiplying Found Values by Two",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Sorting",
+   "Simulation"
+  ]
+ },
+ "merge-two-sorted-lists": {
+  "id": 21,
+  "title": "Merge Two Sorted Lists",
+  "difficulty": "Easy",
+  "tags": [
+   "Linked List",
+   "Recursion"
+  ]
+ },
+ "minimum-operations-to-make-array-sum-divisible-by-k": {
+  "id": 3512,
+  "title": "Minimum Operations to Make Array Sum Divisible by K",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Math"
+  ]
+ },
+ "ransom-note": {
+  "id": 383,
+  "title": "Ransom Note",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Counting"
+  ]
+ },
+ "minimum-size-subarray-sum": {
+  "id": 209,
+  "title": "Minimum Size Subarray Sum",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Binary Search",
+   "Sliding Window",
+   "Prefix Sum"
+  ]
+ },
+ "daily-temperatures": {
+  "id": 739,
+  "title": "Daily Temperatures",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Stack",
+   "Monotonic Stack"
+  ]
+ },
+ "same-tree": {
+  "id": 100,
+  "title": "Same Tree",
+  "difficulty": "Easy",
+  "tags": [
+   "Tree",
+   "Depth-First Search",
+   "Breadth-First Search",
+   "Binary Tree"
+  ]
+ },
+ "spiral-matrix": {
+  "id": 54,
+  "title": "Spiral Matrix",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Matrix",
+   "Simulation"
+  ]
+ },
+ "search-in-rotated-sorted-array": {
+  "id": 33,
+  "title": "Search in Rotated Sorted Array",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Binary Search"
+  ]
+ },
+ "climbing-stairs": {
+  "id": 70,
+  "title": "Climbing Stairs",
+  "difficulty": "Easy",
+  "tags": [
+   "Math",
+   "Dynamic Programming",
+   "Memoization"
+  ]
+ },
+ "majority-element": {
+  "id": 169,
+  "title": "Majority Element",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Divide and Conquer",
+   "Sorting",
+   "Counting",
+   "Boyer–Moore Majority Vote Algorithm"
+  ]
+ },
+ "transpose-matrix": {
+  "id": 867,
+  "title": "Transpose Matrix",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Matrix",
+   "Simulation"
+  ]
  }
 }
