@@ -14,10 +14,6 @@ class AuthExpired(Exception):
     """Cookies rejected: LeetCode says we're not signed in."""
 
 
-class Blocked(Exception):
-    """Signed in, but the request was refused (e.g. bot protection on CI runners)."""
-
-
 class LeetCode:
     def __init__(self, username: str, session: str | None = None, csrf: str | None = None):
         self.username = username
@@ -90,7 +86,7 @@ class LeetCode:
         d = self.gql("query { userStatus { isSignedIn username } }").get("userStatus") or {}
         return d.get("username") if d.get("isSignedIn") else None
 
-    def submissions_page_gql(self, offset: int, lastkey: str = "") -> tuple[list[dict], bool, str]:
+    def submissions_page(self, offset: int, lastkey: str = "") -> tuple[list[dict], bool, str]:
         q = """query s($offset: Int!, $limit: Int!, $lastKey: String) {
           submissionList(offset: $offset, limit: $limit, lastKey: $lastKey) {
             lastKey hasNext
@@ -114,36 +110,6 @@ class LeetCode:
             if s.get("isPending") in (None, "Not Pending")
         ]
         return rows, bool(d.get("hasNext")), d.get("lastKey") or ""
-
-    def submissions_page(self, offset: int, lastkey: str = "") -> tuple[list[dict], bool, str]:
-        r = self.http.get(
-            f"{BASE}/api/submissions/",
-            params={"offset": offset, "limit": 20, "lastkey": lastkey},
-            timeout=30,
-            allow_redirects=False,
-        )
-        if r.status_code != 200 or "submissions_dump" not in r.text[:5000]:
-            print(f"  ! /api/submissions/ returned HTTP {r.status_code}: {r.text[:200]!r}")
-            raise Blocked()
-        body = r.json()
-        rows = []
-        for s in body["submissions_dump"]:
-            if s.get("is_pending") not in (None, "Not Pending"):
-                continue
-            rows.append(
-                {
-                    "id": str(s["id"]),
-                    "slug": s["title_slug"],
-                    "title": s["title"],
-                    "timestamp": int(s["timestamp"]),
-                    "status": s["status_display"],
-                    "lang": s["lang"],
-                    "runtime": s.get("runtime"),
-                    "memory": s.get("memory"),
-                    "code": s.get("code"),
-                }
-            )
-        return rows, bool(body.get("has_next")), body.get("last_key") or ""
 
     def submission_details(self, submission_id: str) -> dict:
         q = """query d($submissionId: Int!) {

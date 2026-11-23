@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import complexity
-from leetcode import AuthExpired, Blocked, LeetCode
+from leetcode import AuthExpired, LeetCode
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -48,15 +48,9 @@ def fetch_new(lc: LeetCode, known: set[str], state: dict) -> list[dict]:
             if not me:
                 raise AuthExpired()
             print(f"Signed in to LeetCode as {me}")
-            page = lc.submissions_page
-            try:
-                page(0)
-            except Blocked:
-                print("  REST endpoint refused; using GraphQL instead")
-                page = lc.submissions_page_gql
             out, offset, lastkey = [], 0, ""
             for _ in range(MAX_PAGES):
-                rows, has_next, lastkey = page(offset, lastkey)
+                rows, has_next, lastkey = lc.submissions_page(offset, lastkey)
                 fresh = [r for r in rows if key_of(r) not in known]
                 out += fresh
                 if len(fresh) < len(rows) or not has_next:
