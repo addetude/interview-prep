@@ -1,4 +1,11 @@
 {
  "auth": "ok",
- "last_sync": "2026-11-23T21:22:32+00:00"
+ "last_sync": "2026-11-23T21:34:27+00:00",
+ "backfilled": true,
+ "profile": {
+  "All": 91,
+  "Easy": 75,
+  "Medium": 16,
+  "Hard": 0
+ }
 }

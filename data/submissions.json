@@ -3903,5 +3903,2175 @@
    "space": null
   },
   "solution_path": "solutions/1365-how-many-numbers-are-smaller-than-the-current-number/2025-03-25_1586222463.py"
+ },
+ {
+  "id": "1586219587",
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "timestamp": 1742943619,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "13.5 MB",
+  "key": "1742943619-two-sum",
+  "runtime_pct": 100.0,
+  "memory_pct": 9.507000000000023,
+  "passed": 63,
+  "total": 63,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0001-two-sum/2025-03-25_1586219587.py"
+ },
+ {
+  "id": "1586019608",
+  "slug": "find-all-numbers-disappeared-in-an-array",
+  "title": "Find All Numbers Disappeared in an Array",
+  "timestamp": 1742928467,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "39 ms",
+  "memory": "27.3 MB",
+  "key": "1742928467-find-all-numbers-disappeared-in-an-array",
+  "runtime_pct": 47.90819999999998,
+  "memory_pct": 35.02030000000001,
+  "passed": 35,
+  "total": 35,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0448-find-all-numbers-disappeared-in-an-array/2025-03-25_1586019608.py"
+ },
+ {
+  "id": "1585334164",
+  "slug": "missing-number",
+  "title": "Missing Number",
+  "timestamp": 1742887404,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "19 ms",
+  "memory": "13.4 MB",
+  "key": "1742887404-missing-number",
+  "runtime_pct": 24.43149999999999,
+  "memory_pct": 22.538499999999992,
+  "passed": 122,
+  "total": 122,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0268-missing-number/2025-03-25_1585334164.py"
+ },
+ {
+  "id": "1585329615",
+  "slug": "missing-number",
+  "title": "Missing Number",
+  "timestamp": 1742887070,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1742887070-missing-number",
+  "passed": 110,
+  "total": 122,
+  "last_input": "[1]",
+  "expected": "0",
+  "output": "2",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1585322899",
+  "slug": "contains-duplicate",
+  "title": "Contains Duplicate",
+  "timestamp": 1742886601,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "13 ms",
+  "memory": "25.9 MB",
+  "key": "1742886601-contains-duplicate",
+  "runtime_pct": 96.37849999999999,
+  "memory_pct": 32.60989999999993,
+  "passed": 76,
+  "total": 76,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0217-contains-duplicate/2025-03-25_1585322899.py"
+ },
+ {
+  "id": "1582903262",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1742701312,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "4 ms",
+  "memory": "12.7 MB",
+  "key": "1742701312-valid-parentheses",
+  "runtime_pct": 37.92309999999999,
+  "memory_pct": 7.607900000000011,
+  "passed": 100,
+  "total": 100,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2025-03-23_1582903262.py"
+ },
+ {
+  "id": "1582897509",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1742701023,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1742701023-valid-parentheses",
+  "passed": 7,
+  "total": 100,
+  "last_input": "\"]\"",
+  "expected": "false",
+  "error": "IndexError: pop from empty list\n    if not stack.pop() == \"[\":\nLine 14 in isValid (Solution.py)\n    ret = Solution().isValid(param_1)\nLine 46 in _driver (Solution.py)\n    _driver()\nLine 60 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1517888345",
+  "slug": "points-that-intersect-with-cars",
+  "title": "Points That Intersect With Cars",
+  "timestamp": 1737631098,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "77 ms",
+  "memory": "12.5 MB",
+  "key": "1737631098-points-that-intersect-with-cars",
+  "runtime_pct": 5.208400000000019,
+  "memory_pct": 11.458299999999994,
+  "passed": 807,
+  "total": 807,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/2848-points-that-intersect-with-cars/2025-01-23_1517888345.py"
+ },
+ {
+  "id": "1516265343",
+  "slug": "reverse-linked-list",
+  "title": "Reverse Linked List",
+  "timestamp": 1737500092,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "14.5 MB",
+  "key": "1737500092-reverse-linked-list",
+  "runtime_pct": 100.0,
+  "memory_pct": 9.794999999999993,
+  "passed": 28,
+  "total": 28,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0206-reverse-linked-list/2025-01-21_1516265343.py"
+ },
+ {
+  "id": "1509909566",
+  "slug": "remove-duplicates-from-sorted-array",
+  "title": "Remove Duplicates from Sorted Array",
+  "timestamp": 1736988056,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "3 ms",
+  "memory": "13.9 MB",
+  "key": "1736988056-remove-duplicates-from-sorted-array",
+  "runtime_pct": 60.4688,
+  "memory_pct": 7.727200000000007,
+  "passed": 362,
+  "total": 362,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0026-remove-duplicates-from-sorted-array/2025-01-16_1509909566.py"
+ },
+ {
+  "id": "1507311446",
+  "slug": "two-sum-ii-input-array-is-sorted",
+  "title": "Two Sum II - Input Array Is Sorted",
+  "timestamp": 1736778097,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.9 MB",
+  "key": "1736778097-two-sum-ii-input-array-is-sorted",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1506876108",
+  "slug": "best-time-to-buy-and-sell-stock",
+  "title": "Best Time to Buy and Sell Stock",
+  "timestamp": 1736743629,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "19 ms",
+  "memory": "19.1 MB",
+  "key": "1736743629-best-time-to-buy-and-sell-stock",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1506789114",
+  "slug": "best-time-to-buy-and-sell-stock",
+  "title": "Best Time to Buy and Sell Stock",
+  "timestamp": 1736735821,
+  "status": "Time Limit Exceeded",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736735821-best-time-to-buy-and-sell-stock",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1505798634",
+  "slug": "search-insert-position",
+  "title": "Search Insert Position",
+  "timestamp": 1736657525,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.9 MB",
+  "key": "1736657525-search-insert-position",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1505795829",
+  "slug": "search-insert-position",
+  "title": "Search Insert Position",
+  "timestamp": 1736657308,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736657308-search-insert-position",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1505795194",
+  "slug": "search-insert-position",
+  "title": "Search Insert Position",
+  "timestamp": 1736657263,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736657263-search-insert-position",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1505793302",
+  "slug": "search-insert-position",
+  "title": "Search Insert Position",
+  "timestamp": 1736657125,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736657125-search-insert-position",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1505792157",
+  "slug": "search-insert-position",
+  "title": "Search Insert Position",
+  "timestamp": 1736657040,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736657040-search-insert-position",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1504825619",
+  "slug": "maximum-average-subarray-i",
+  "title": "Maximum Average Subarray I",
+  "timestamp": 1736580603,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "139 ms",
+  "memory": "19.3 MB",
+  "key": "1736580603-maximum-average-subarray-i",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1504825149",
+  "slug": "maximum-average-subarray-i",
+  "title": "Maximum Average Subarray I",
+  "timestamp": 1736580567,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "107 ms",
+  "memory": "19.1 MB",
+  "key": "1736580567-maximum-average-subarray-i",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1504824761",
+  "slug": "maximum-average-subarray-i",
+  "title": "Maximum Average Subarray I",
+  "timestamp": 1736580539,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736580539-maximum-average-subarray-i",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1504468456",
+  "slug": "binary-search",
+  "title": "Binary Search",
+  "timestamp": 1736542979,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "13.4 MB",
+  "key": "1736542979-binary-search",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1503855209",
+  "slug": "plus-one",
+  "title": "Plus One",
+  "timestamp": 1736496800,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736496800-plus-one",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1503853594",
+  "slug": "plus-one",
+  "title": "Plus One",
+  "timestamp": 1736496669,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736496669-plus-one",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1503457396",
+  "slug": "find-the-index-of-the-first-occurrence-in-a-string",
+  "title": "Find the Index of the First Occurrence in a String",
+  "timestamp": 1736461063,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.4 MB",
+  "key": "1736461063-find-the-index-of-the-first-occurrence-in-a-string",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1502300586",
+  "slug": "contains-duplicate-ii",
+  "title": "Contains Duplicate II",
+  "timestamp": 1736373292,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "30 ms",
+  "memory": "21.8 MB",
+  "key": "1736373292-contains-duplicate-ii",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1501024661",
+  "slug": "product-sales-analysis-i",
+  "title": "Product Sales Analysis I",
+  "timestamp": 1736274162,
+  "status": "Accepted",
+  "lang": "mysql",
+  "runtime": "2262 ms",
+  "memory": "0.0B",
+  "key": "1736274162-product-sales-analysis-i",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1501024315",
+  "slug": "product-sales-analysis-i",
+  "title": "Product Sales Analysis I",
+  "timestamp": 1736274146,
+  "status": "Accepted",
+  "lang": "mysql",
+  "runtime": "3349 ms",
+  "memory": "0.0B",
+  "key": "1736274146-product-sales-analysis-i",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1500978855",
+  "slug": "product-sales-analysis-i",
+  "title": "Product Sales Analysis I",
+  "timestamp": 1736271846,
+  "status": "Accepted",
+  "lang": "mysql",
+  "runtime": "2822 ms",
+  "memory": "0B",
+  "key": "1736271846-product-sales-analysis-i",
+  "runtime_pct": 5.005799999999934,
+  "memory_pct": 100.0,
+  "passed": 13,
+  "total": 13,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1068-product-sales-analysis-i/2025-01-07_1500978855.sql"
+ },
+ {
+  "id": "1499787644",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1736183767,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "3 ms",
+  "memory": "12.7 MB",
+  "key": "1736183767-valid-parentheses",
+  "runtime_pct": 68.16329999999999,
+  "memory_pct": 7.607900000000011,
+  "passed": 100,
+  "total": 100,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2025-01-06_1499787644.py"
+ },
+ {
+  "id": "1499787166",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1736183742,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736183742-valid-parentheses",
+  "passed": 90,
+  "total": 100,
+  "last_input": "\"[\"",
+  "expected": "false",
+  "output": "true",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1499783634",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1736183566,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "2 ms",
+  "memory": "12.5 MB",
+  "key": "1736183566-valid-parentheses",
+  "runtime_pct": 87.0406,
+  "memory_pct": 25.581600000000012,
+  "passed": 100,
+  "total": 100,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2025-01-06_1499783634.py"
+ },
+ {
+  "id": "1499782239",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1736183494,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736183494-valid-parentheses",
+  "passed": 7,
+  "total": 100,
+  "last_input": "\"]\"",
+  "expected": "false",
+  "error": "IndexError: list index out of range\n    if not stk[-1]:\nLine 8 in isValid (Solution.py)\n    ret = Solution().isValid(param_1)\nLine 58 in _driver (Solution.py)\n    _driver()\nLine 72 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1499781308",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1736183446,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736183446-valid-parentheses",
+  "passed": 7,
+  "total": 100,
+  "last_input": "\"]\"",
+  "expected": "false",
+  "error": "IndexError: list index out of range\n    if stk[-1]:\nLine 8 in isValid (Solution.py)\n    ret = Solution().isValid(param_1)\nLine 58 in _driver (Solution.py)\n    _driver()\nLine 72 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1499226074",
+  "slug": "linked-list-cycle",
+  "title": "Linked List Cycle",
+  "timestamp": 1736143113,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "35 ms",
+  "memory": "19.6 MB",
+  "key": "1736143113-linked-list-cycle",
+  "runtime_pct": 82.89,
+  "memory_pct": 22.94490000000004,
+  "passed": 29,
+  "total": 29,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0141-linked-list-cycle/2025-01-06_1499226074.py"
+ },
+ {
+  "id": "1499223432",
+  "slug": "linked-list-cycle",
+  "title": "Linked List Cycle",
+  "timestamp": 1736142918,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736142918-linked-list-cycle",
+  "passed": 15,
+  "total": 29,
+  "last_input": "[1,2]\n-1",
+  "expected": "false",
+  "output": "true",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1499084696",
+  "slug": "richest-customer-wealth",
+  "title": "Richest Customer Wealth",
+  "timestamp": 1736130890,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.5 MB",
+  "key": "1736130890-richest-customer-wealth",
+  "runtime_pct": 100.0,
+  "memory_pct": 12.459099999999996,
+  "passed": 34,
+  "total": 34,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1672-richest-customer-wealth/2025-01-06_1499084696.py"
+ },
+ {
+  "id": "1497836045",
+  "slug": "binary-search",
+  "title": "Binary Search",
+  "timestamp": 1736025907,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736025907-binary-search",
+  "passed": 24,
+  "total": 47,
+  "last_input": "[5]\n5",
+  "expected": "0",
+  "output": "-1",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1497835398",
+  "slug": "binary-search",
+  "title": "Binary Search",
+  "timestamp": 1736025843,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1736025843-binary-search",
+  "passed": 24,
+  "total": 47,
+  "last_input": "[5]\n5",
+  "expected": "0",
+  "output": "-1",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1497834473",
+  "slug": "remove-duplicates-from-sorted-list",
+  "title": "Remove Duplicates from Sorted List",
+  "timestamp": 1736025748,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "4 ms",
+  "memory": "12.3 MB",
+  "key": "1736025748-remove-duplicates-from-sorted-list",
+  "runtime_pct": 18.931400000000007,
+  "memory_pct": 44.14659999999998,
+  "passed": 168,
+  "total": 168,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0083-remove-duplicates-from-sorted-list/2025-01-04_1497834473.py"
+ },
+ {
+  "id": "1496859700",
+  "slug": "baseball-game",
+  "title": "Baseball Game",
+  "timestamp": 1735957660,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.5 MB",
+  "key": "1735957660-baseball-game",
+  "runtime_pct": 100.0,
+  "memory_pct": 7.601700000000012,
+  "passed": 39,
+  "total": 39,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0682-baseball-game/2025-01-04_1496859700.py"
+ },
+ {
+  "id": "1496012355",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "timestamp": 1735891012,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "13 ms",
+  "memory": "12.7 MB",
+  "key": "1735891012-valid-palindrome",
+  "runtime_pct": 84.05420000000001,
+  "memory_pct": 60.268499999999996,
+  "passed": 486,
+  "total": 486,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0125-valid-palindrome/2025-01-03_1496012355.py"
+ },
+ {
+  "id": "1496010347",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "timestamp": 1735890866,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735890866-valid-palindrome",
+  "passed": 463,
+  "total": 486,
+  "last_input": "\"0P\"",
+  "expected": "false",
+  "output": "true",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1496010057",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "timestamp": 1735890845,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735890845-valid-palindrome",
+  "passed": 463,
+  "total": 486,
+  "last_input": "\"0P\"",
+  "expected": "false",
+  "output": "true",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1496009852",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "timestamp": 1735890829,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735890829-valid-palindrome",
+  "passed": 461,
+  "total": 486,
+  "last_input": "\".,\"",
+  "expected": "true",
+  "output": "false",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1496008095",
+  "slug": "valid-palindrome",
+  "title": "Valid Palindrome",
+  "timestamp": 1735890697,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735890697-valid-palindrome",
+  "passed": 7,
+  "total": 486,
+  "last_input": "\".,\"",
+  "expected": "true",
+  "error": "IndexError: string index out of range\n    while not s[l].isalpha():\nLine 7 in isPalindrome (Solution.py)\n    ret = Solution().isPalindrome(param_1)\nLine 41 in _driver (Solution.py)\n    _driver()\nLine 55 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1495353192",
+  "slug": "reverse-string",
+  "title": "Reverse String",
+  "timestamp": 1735838517,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "2 ms",
+  "memory": "19.8 MB",
+  "key": "1735838517-reverse-string",
+  "runtime_pct": 70.859,
+  "memory_pct": 29.744800000000016,
+  "passed": 477,
+  "total": 477,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0344-reverse-string/2025-01-02_1495353192.py"
+ },
+ {
+  "id": "1495351434",
+  "slug": "reverse-string",
+  "title": "Reverse String",
+  "timestamp": 1735838423,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "12 ms",
+  "memory": "20.3 MB",
+  "key": "1735838423-reverse-string",
+  "runtime_pct": 5.412699999999997,
+  "memory_pct": 8.867700000000017,
+  "passed": 477,
+  "total": 477,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0344-reverse-string/2025-01-02_1495351434.py"
+ },
+ {
+  "id": "1495346391",
+  "slug": "reverse-string",
+  "title": "Reverse String",
+  "timestamp": 1735838159,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "6 ms",
+  "memory": "20 MB",
+  "key": "1735838159-reverse-string",
+  "runtime_pct": 17.059399999999997,
+  "memory_pct": 16.938200000000016,
+  "passed": 477,
+  "total": 477,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0344-reverse-string/2025-01-02_1495346391.py"
+ },
+ {
+  "id": "1495341375",
+  "slug": "reverse-string",
+  "title": "Reverse String",
+  "timestamp": 1735837893,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "20 MB",
+  "key": "1735837893-reverse-string",
+  "runtime_pct": 100.0,
+  "memory_pct": 16.938200000000016,
+  "passed": 477,
+  "total": 477,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0344-reverse-string/2025-01-02_1495341375.py"
+ },
+ {
+  "id": "1493627269",
+  "slug": "squares-of-a-sorted-array",
+  "title": "Squares of a Sorted Array",
+  "timestamp": 1735679691,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735679691-squares-of-a-sorted-array",
+  "passed": 45,
+  "total": 137,
+  "last_input": "[-5,-3,-2,-1]",
+  "expected": "[1,4,9,25]",
+  "output": "[4,9,1,25]",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1493618851",
+  "slug": "squares-of-a-sorted-array",
+  "title": "Squares of a Sorted Array",
+  "timestamp": 1735678411,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "15 ms",
+  "memory": "14.5 MB",
+  "key": "1735678411-squares-of-a-sorted-array",
+  "runtime_pct": 37.4971,
+  "memory_pct": 7.171500000000009,
+  "passed": 137,
+  "total": 137,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0977-squares-of-a-sorted-array/2024-12-31_1493618851.py"
+ },
+ {
+  "id": "1493610599",
+  "slug": "summary-ranges",
+  "title": "Summary Ranges",
+  "timestamp": 1735677217,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.5 MB",
+  "key": "1735677217-summary-ranges",
+  "runtime_pct": 100.0,
+  "memory_pct": 9.609499999999993,
+  "passed": 33,
+  "total": 33,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0228-summary-ranges/2024-12-31_1493610599.py"
+ },
+ {
+  "id": "1493610281",
+  "slug": "summary-ranges",
+  "title": "Summary Ranges",
+  "timestamp": 1735677173,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735677173-summary-ranges",
+  "passed": 30,
+  "total": 33,
+  "last_input": "[-1]",
+  "expected": "[\"-1\"]",
+  "output": "[]",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1493609940",
+  "slug": "summary-ranges",
+  "title": "Summary Ranges",
+  "timestamp": 1735677130,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735677130-summary-ranges",
+  "passed": 2,
+  "total": 33,
+  "last_input": "[]",
+  "expected": "[]",
+  "error": "IndexError: list index out of range\n    a = nums[0]\nLine 4 in summaryRanges (Solution.py)\n    ret = Solution().summaryRanges(param_1)\nLine 49 in _driver (Solution.py)\n    _driver()\nLine 63 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1493048721",
+  "slug": "longest-common-prefix",
+  "title": "Longest Common Prefix",
+  "timestamp": 1735622346,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.5 MB",
+  "key": "1735622346-longest-common-prefix",
+  "runtime_pct": 100.0,
+  "memory_pct": 18.929500000000004,
+  "passed": 126,
+  "total": 126,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0014-longest-common-prefix/2024-12-31_1493048721.py"
+ },
+ {
+  "id": "1493047579",
+  "slug": "longest-common-prefix",
+  "title": "Longest Common Prefix",
+  "timestamp": 1735622241,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.6 MB",
+  "key": "1735622241-longest-common-prefix",
+  "runtime_pct": 100.0,
+  "memory_pct": 18.929500000000004,
+  "passed": 126,
+  "total": 126,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0014-longest-common-prefix/2024-12-31_1493047579.py"
+ },
+ {
+  "id": "1493025525",
+  "slug": "valid-anagram",
+  "title": "Valid Anagram",
+  "timestamp": 1735620268,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "11 ms",
+  "memory": "12.7 MB",
+  "key": "1735620268-valid-anagram",
+  "runtime_pct": 97.05449999999999,
+  "memory_pct": 48.859100000000005,
+  "passed": 51,
+  "total": 51,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0242-valid-anagram/2024-12-31_1493025525.py"
+ },
+ {
+  "id": "1493019000",
+  "slug": "roman-to-integer",
+  "title": "Roman to Integer",
+  "timestamp": 1735619664,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.6 MB",
+  "key": "1735619664-roman-to-integer",
+  "runtime_pct": 100.0,
+  "memory_pct": 9.744199999999992,
+  "passed": 3999,
+  "total": 3999,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0013-roman-to-integer/2024-12-31_1493019000.py"
+ },
+ {
+  "id": "1492983312",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735615972,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.9 MB",
+  "key": "1735615972-is-subsequence",
+  "runtime_pct": 100.0,
+  "memory_pct": 5.874800000000003,
+  "passed": 20,
+  "total": 20,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0392-is-subsequence/2024-12-31_1492983312.py"
+ },
+ {
+  "id": "1492982651",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735615897,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735615897-is-subsequence",
+  "passed": 10,
+  "total": 20,
+  "last_input": "\"b\"\n\"abc\"",
+  "expected": "true",
+  "error": "IndexError: string index out of range\n    if s[j] == t[i]:\nLine 15 in isSubsequence (Solution.py)\n    ret = Solution().isSubsequence(param_1, param_2)\nLine 52 in _driver (Solution.py)\n    _driver()\nLine 66 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1492980348",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735615620,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735615620-is-subsequence",
+  "passed": 2,
+  "total": 20,
+  "last_input": "\"\"\n\"ahbgdc\"",
+  "expected": "true",
+  "error": "IndexError: string index out of range\n    letter = s[j]\nLine 5 in isSubsequence (Solution.py)\n    ret = Solution().isSubsequence(param_1, param_2)\nLine 41 in _driver (Solution.py)\n    _driver()\nLine 55 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1492980065",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735615591,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735615591-is-subsequence",
+  "passed": 2,
+  "total": 20,
+  "last_input": "\"\"\n\"ahbgdc\"",
+  "expected": "true",
+  "error": "IndexError: string index out of range\n    if s[j] == t[i]:\nLine 5 in isSubsequence (Solution.py)\n    ret = Solution().isSubsequence(param_1, param_2)\nLine 40 in _driver (Solution.py)\n    _driver()\nLine 54 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1492187970",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735541127,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735541127-is-subsequence",
+  "passed": 2,
+  "total": 20,
+  "last_input": "\"\"\n\"ahbgdc\"",
+  "expected": "true",
+  "error": "IndexError: string index out of range\n    letter = s[j]\nLine 5 in isSubsequence (Solution.py)\n    ret = Solution().isSubsequence(param_1, param_2)\nLine 41 in _driver (Solution.py)\n    _driver()\nLine 55 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1492183528",
+  "slug": "is-subsequence",
+  "title": "Is Subsequence",
+  "timestamp": 1735540783,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "3 ms",
+  "memory": "12.6 MB",
+  "key": "1735540783-is-subsequence",
+  "runtime_pct": 18.845899999999997,
+  "memory_pct": 15.362700000000002,
+  "passed": 20,
+  "total": 20,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0392-is-subsequence/2024-12-30_1492183528.py"
+ },
+ {
+  "id": "1491800366",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "timestamp": 1735497032,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "13.6 MB",
+  "key": "1735497032-majority-element",
+  "runtime_pct": 100.0,
+  "memory_pct": 27.775099999999995,
+  "passed": 52,
+  "total": 52,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0169-majority-element/2024-12-29_1491800366.py"
+ },
+ {
+  "id": "1491799295",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "timestamp": 1735496947,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "7 ms",
+  "memory": "13.5 MB",
+  "key": "1735496947-majority-element",
+  "runtime_pct": 90.0468,
+  "memory_pct": 47.74829999999999,
+  "passed": 52,
+  "total": 52,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0169-majority-element/2024-12-29_1491799295.py"
+ },
+ {
+  "id": "1491787128",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "timestamp": 1735496029,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "8 ms",
+  "memory": "13.8 MB",
+  "key": "1735496029-majority-element",
+  "runtime_pct": 87.1307,
+  "memory_pct": 16.349499999999995,
+  "passed": 52,
+  "total": 52,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0169-majority-element/2024-12-29_1491787128.py"
+ },
+ {
+  "id": "1491786755",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "timestamp": 1735496001,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735496001-majority-element",
+  "passed": 50,
+  "total": 52,
+  "last_input": "[1]",
+  "expected": "1",
+  "output": "null",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1491782742",
+  "slug": "majority-element",
+  "title": "Majority Element",
+  "timestamp": 1735495700,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "19 ms",
+  "memory": "13.7 MB",
+  "key": "1735495700-majority-element",
+  "runtime_pct": 48.50370000000001,
+  "memory_pct": 16.349499999999995,
+  "passed": 52,
+  "total": 52,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0169-majority-element/2024-12-29_1491782742.py"
+ },
+ {
+  "id": "1491358966",
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "timestamp": 1735458560,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "13.3 MB",
+  "key": "1735458560-two-sum",
+  "runtime_pct": 100.0,
+  "memory_pct": 9.507000000000023,
+  "passed": 63,
+  "total": 63,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0001-two-sum/2024-12-29_1491358966.py"
+ },
+ {
+  "id": "1491353687",
+  "slug": "maximum-number-of-balloons",
+  "title": "Maximum Number of Balloons",
+  "timestamp": 1735458080,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "4 ms",
+  "memory": "12.6 MB",
+  "key": "1735458080-maximum-number-of-balloons",
+  "runtime_pct": 67.6922,
+  "memory_pct": 8.718100000000002,
+  "passed": 28,
+  "total": 28,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1189-maximum-number-of-balloons/2024-12-29_1491353687.py"
+ },
+ {
+  "id": "1491353510",
+  "slug": "maximum-number-of-balloons",
+  "title": "Maximum Number of Balloons",
+  "timestamp": 1735458063,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "7 ms",
+  "memory": "12.6 MB",
+  "key": "1735458063-maximum-number-of-balloons",
+  "runtime_pct": 42.564099999999996,
+  "memory_pct": 8.718100000000002,
+  "passed": 28,
+  "total": 28,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1189-maximum-number-of-balloons/2024-12-29_1491353510.py"
+ },
+ {
+  "id": "1491353052",
+  "slug": "maximum-number-of-balloons",
+  "title": "Maximum Number of Balloons",
+  "timestamp": 1735458021,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "3 ms",
+  "memory": "12.6 MB",
+  "key": "1735458021-maximum-number-of-balloons",
+  "runtime_pct": 77.0939,
+  "memory_pct": 8.718100000000002,
+  "passed": 28,
+  "total": 28,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1189-maximum-number-of-balloons/2024-12-29_1491353052.py"
+ },
+ {
+  "id": "1491212645",
+  "slug": "ransom-note",
+  "title": "Ransom Note",
+  "timestamp": 1735445055,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "23 ms",
+  "memory": "12.6 MB",
+  "key": "1735445055-ransom-note",
+  "runtime_pct": 88.26870000000001,
+  "memory_pct": 30.8529,
+  "passed": 129,
+  "total": 129,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0383-ransom-note/2024-12-29_1491212645.py"
+ },
+ {
+  "id": "1489486922",
+  "slug": "contains-duplicate",
+  "title": "Contains Duplicate",
+  "timestamp": 1735279188,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "8 ms",
+  "memory": "26.1 MB",
+  "key": "1735279188-contains-duplicate",
+  "runtime_pct": 99.41319999999999,
+  "memory_pct": 22.961399999999934,
+  "passed": 76,
+  "total": 76,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0217-contains-duplicate/2024-12-27_1489486922.py"
+ },
+ {
+  "id": "1489486220",
+  "slug": "contains-duplicate",
+  "title": "Contains Duplicate",
+  "timestamp": 1735279135,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "8 ms",
+  "memory": "26 MB",
+  "key": "1735279135-contains-duplicate",
+  "runtime_pct": 99.41319999999999,
+  "memory_pct": 22.961399999999934,
+  "passed": 76,
+  "total": 76,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0217-contains-duplicate/2024-12-27_1489486220.py"
+ },
+ {
+  "id": "1489482144",
+  "slug": "jewels-and-stones",
+  "title": "Jewels and Stones",
+  "timestamp": 1735278819,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "12.4 MB",
+  "key": "1735278819-jewels-and-stones",
+  "runtime_pct": 100.0,
+  "memory_pct": 26.2421,
+  "passed": 255,
+  "total": 255,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0771-jewels-and-stones/2024-12-27_1489482144.py"
+ },
+ {
+  "id": "1488341236",
+  "slug": "merge-strings-alternately",
+  "title": "Merge Strings Alternately",
+  "timestamp": 1735162491,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "20 ms",
+  "memory": "12.3 MB",
+  "key": "1735162491-merge-strings-alternately",
+  "runtime_pct": 28.4303,
+  "memory_pct": 25.092699999999976,
+  "passed": 108,
+  "total": 108,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1768-merge-strings-alternately/2024-12-25_1488341236.py"
+ },
+ {
+  "id": "1488336781",
+  "slug": "merge-strings-alternately",
+  "title": "Merge Strings Alternately",
+  "timestamp": 1735161831,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "21 ms",
+  "memory": "12.5 MB",
+  "key": "1735161831-merge-strings-alternately",
+  "runtime_pct": 18.644599999999997,
+  "memory_pct": 8.590799999999977,
+  "passed": 108,
+  "total": 108,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1768-merge-strings-alternately/2024-12-25_1488336781.py"
+ },
+ {
+  "id": "1488333937",
+  "slug": "merge-strings-alternately",
+  "title": "Merge Strings Alternately",
+  "timestamp": 1735161399,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735161399-merge-strings-alternately",
+  "passed": 19,
+  "total": 108,
+  "last_input": "\"cdf\"\n\"a\"",
+  "expected": "\"cadf\"",
+  "output": "\"caf\"",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1487517369",
+  "slug": "find-closest-number-to-zero",
+  "title": "Find Closest Number to Zero",
+  "timestamp": 1735077292,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "1 ms",
+  "memory": "12.7 MB",
+  "key": "1735077292-find-closest-number-to-zero",
+  "runtime_pct": 97.8836,
+  "memory_pct": 20.63489999999999,
+  "passed": 227,
+  "total": 227,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/2239-find-closest-number-to-zero/2024-12-24_1487517369.py"
+ },
+ {
+  "id": "1487516152",
+  "slug": "find-closest-number-to-zero",
+  "title": "Find Closest Number to Zero",
+  "timestamp": 1735077095,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735077095-find-closest-number-to-zero",
+  "passed": 17,
+  "total": 227,
+  "last_input": "[-10,10,10,10]",
+  "expected": "10",
+  "output": "-10",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1487514472",
+  "slug": "find-closest-number-to-zero",
+  "title": "Find Closest Number to Zero",
+  "timestamp": 1735076829,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735076829-find-closest-number-to-zero",
+  "passed": 17,
+  "total": 227,
+  "last_input": "[-10,10,10,10]",
+  "expected": "10",
+  "output": "-10",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1487513778",
+  "slug": "find-closest-number-to-zero",
+  "title": "Find Closest Number to Zero",
+  "timestamp": 1735076726,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1735076726-find-closest-number-to-zero",
+  "passed": 117,
+  "total": 227,
+  "last_input": "[-100000,-100000]",
+  "expected": "-100000",
+  "output": "100000",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1427659818",
+  "slug": "shuffle-the-array",
+  "title": "Shuffle the Array",
+  "timestamp": 1729370179,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "30 ms",
+  "memory": "11.8 MB",
+  "key": "1729370179-shuffle-the-array",
+  "runtime_pct": 98.91189999999999,
+  "memory_pct": 99.9721,
+  "passed": 53,
+  "total": 53,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1470-shuffle-the-array/2024-10-19_1427659818.py"
+ },
+ {
+  "id": "1427659039",
+  "slug": "shuffle-the-array",
+  "title": "Shuffle the Array",
+  "timestamp": 1729370106,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "42 ms",
+  "memory": "11.7 MB",
+  "key": "1729370106-shuffle-the-array",
+  "runtime_pct": 51.06029999999997,
+  "memory_pct": 99.9721,
+  "passed": 53,
+  "total": 53,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1470-shuffle-the-array/2024-10-19_1427659039.py"
+ },
+ {
+  "id": "1427658268",
+  "slug": "shuffle-the-array",
+  "title": "Shuffle the Array",
+  "timestamp": 1729370034,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "39 ms",
+  "memory": "11.9 MB",
+  "key": "1729370034-shuffle-the-array",
+  "runtime_pct": 77.45539999999997,
+  "memory_pct": 99.9442,
+  "passed": 53,
+  "total": 53,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1470-shuffle-the-array/2024-10-19_1427658268.py"
+ },
+ {
+  "id": "1427652520",
+  "slug": "find-lucky-integer-in-an-array",
+  "title": "Find Lucky Integer in an Array",
+  "timestamp": 1729369498,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "8 ms",
+  "memory": "11.7 MB",
+  "key": "1729369498-find-lucky-integer-in-an-array",
+  "runtime_pct": 22.69130000000002,
+  "memory_pct": 100.0,
+  "passed": 101,
+  "total": 101,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1394-find-lucky-integer-in-an-array/2024-10-19_1427652520.py"
+ },
+ {
+  "id": "1427647139",
+  "slug": "ant-on-the-boundary",
+  "title": "Ant on the Boundary",
+  "timestamp": 1729369002,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "23 ms",
+  "memory": "11.7 MB",
+  "key": "1729369002-ant-on-the-boundary",
+  "runtime_pct": 75.71429999999998,
+  "memory_pct": 100.0,
+  "passed": 641,
+  "total": 641,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/3028-ant-on-the-boundary/2024-10-19_1427647139.py"
+ },
+ {
+  "id": "1427646617",
+  "slug": "ant-on-the-boundary",
+  "title": "Ant on the Boundary",
+  "timestamp": 1729368956,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "22 ms",
+  "memory": "11.7 MB",
+  "key": "1729368956-ant-on-the-boundary",
+  "runtime_pct": 79.99999999999999,
+  "memory_pct": 100.0,
+  "passed": 641,
+  "total": 641,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/3028-ant-on-the-boundary/2024-10-19_1427646617.py"
+ },
+ {
+  "id": "1426661805",
+  "slug": "running-sum-of-1d-array",
+  "title": "Running Sum of 1d Array",
+  "timestamp": 1729276546,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "11.8 MB",
+  "key": "1729276546-running-sum-of-1d-array",
+  "runtime_pct": 100.0,
+  "memory_pct": 100.0,
+  "passed": 54,
+  "total": 54,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1480-running-sum-of-1d-array/2024-10-18_1426661805.py"
+ },
+ {
+  "id": "1426642501",
+  "slug": "harshad-number",
+  "title": "Harshad Number",
+  "timestamp": 1729275323,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "0 ms",
+  "memory": "11.6 MB",
+  "key": "1729275323-harshad-number",
+  "runtime_pct": 100.0,
+  "memory_pct": 100.0,
+  "passed": 100,
+  "total": 100,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/3099-harshad-number/2024-10-18_1426642501.py"
+ },
+ {
+  "id": "1426640847",
+  "slug": "harshad-number",
+  "title": "Harshad Number",
+  "timestamp": 1729275220,
+  "status": "Wrong Answer",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1729275220-harshad-number",
+  "passed": 85,
+  "total": 100,
+  "last_input": "4",
+  "expected": "4",
+  "output": "-1",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1426639076",
+  "slug": "harshad-number",
+  "title": "Harshad Number",
+  "timestamp": 1729275107,
+  "status": "Runtime Error",
+  "lang": "python",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1729275107-harshad-number",
+  "passed": 2,
+  "total": 100,
+  "last_input": "1",
+  "expected": "1",
+  "error": "IndexError: string index out of range\n    num = int(x[0]) + int(x[1])\nLine 4 in sumOfTheDigitsOfHarshadNumber (Solution.py)\n    ret = Solution().sumOfTheDigitsOfHarshadNumber(param_1)\nLine 35 in _driver (Solution.py)\n    _driver()\nLine 49 in <module> (Solution.py)",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1426615283",
+  "slug": "defanging-an-ip-address",
+  "title": "Defanging an IP Address",
+  "timestamp": 1729273667,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "17 ms",
+  "memory": "11.6 MB",
+  "key": "1729273667-defanging-an-ip-address",
+  "runtime_pct": 46.1537,
+  "memory_pct": 100.0,
+  "passed": 62,
+  "total": 62,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1108-defanging-an-ip-address/2024-10-18_1426615283.py"
+ },
+ {
+  "id": "1426599932",
+  "slug": "defanging-an-ip-address",
+  "title": "Defanging an IP Address",
+  "timestamp": 1729272727,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "12 ms",
+  "memory": "11.5 MB",
+  "key": "1729272727-defanging-an-ip-address",
+  "runtime_pct": 88.0065,
+  "memory_pct": 100.0,
+  "passed": 62,
+  "total": 62,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1108-defanging-an-ip-address/2024-10-18_1426599932.py"
+ },
+ {
+  "id": "1426599663",
+  "slug": "defanging-an-ip-address",
+  "title": "Defanging an IP Address",
+  "timestamp": 1729272709,
+  "status": "Accepted",
+  "lang": "python",
+  "runtime": "14 ms",
+  "memory": "11.6 MB",
+  "key": "1729272709-defanging-an-ip-address",
+  "runtime_pct": 80.3142,
+  "memory_pct": 100.0,
+  "passed": 62,
+  "total": 62,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/1108-defanging-an-ip-address/2024-10-18_1426599663.py"
+ },
+ {
+  "id": "1317928950",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720723947,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "1 ms",
+  "memory": "41.7 MB",
+  "key": "1720723947-valid-parentheses",
+  "runtime_pct": 99.9194,
+  "memory_pct": 99.95819999999996,
+  "passed": 98,
+  "total": 98,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2024-07-11_1317928950.java"
+ },
+ {
+  "id": "1317157336",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720675117,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "1 ms",
+  "memory": "41.7 MB",
+  "key": "1720675117-valid-parentheses",
+  "runtime_pct": 99.9194,
+  "memory_pct": 99.95819999999996,
+  "passed": 98,
+  "total": 98,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2024-07-11_1317157336.java"
+ },
+ {
+  "id": "1317125892",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720673019,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "7 ms",
+  "memory": "42.2 MB",
+  "key": "1720673019-valid-parentheses",
+  "runtime_pct": 5.538899999999995,
+  "memory_pct": 99.55819999999996,
+  "passed": 98,
+  "total": 98,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0020-valid-parentheses/2024-07-11_1317125892.java"
+ },
+ {
+  "id": "1317123111",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720672827,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720672827-valid-parentheses",
+  "passed": 94,
+  "total": 98,
+  "last_input": "\"(])\"",
+  "expected": "false",
+  "output": "true",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1317120905",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720672678,
+  "status": "Runtime Error",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720672678-valid-parentheses",
+  "passed": 6,
+  "total": 98,
+  "last_input": "\"]\"",
+  "expected": "false",
+  "error": "java.util.EmptyStackException\n  at line 103, java.base/java.util.Stack.peek\n  at line 11, Solution.isValid\n  at line 56, __DriverSolution__.__helper__\n  at line 86, __Driver__.main",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1317118242",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720672488,
+  "status": "Runtime Error",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720672488-valid-parentheses",
+  "passed": 6,
+  "total": 98,
+  "last_input": "\"]\"",
+  "expected": "false",
+  "error": "java.util.EmptyStackException\n  at line 103, java.base/java.util.Stack.peek\n  at line 11, Solution.isValid\n  at line 56, __DriverSolution__.__helper__\n  at line 86, __Driver__.main",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1315980813",
+  "slug": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "timestamp": 1720589787,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720589787-valid-parentheses",
+  "passed": 61,
+  "total": 98,
+  "last_input": "\"{[]}\"",
+  "expected": "true",
+  "output": "false",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1314722058",
+  "slug": "palindrome-number",
+  "title": "Palindrome Number",
+  "timestamp": 1720501784,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "21 ms",
+  "memory": "44.5 MB",
+  "key": "1720501784-palindrome-number",
+  "runtime_pct": 7.052100000000004,
+  "memory_pct": 99.8929,
+  "passed": 11511,
+  "total": 11511,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0009-palindrome-number/2024-07-09_1314722058.java"
+ },
+ {
+  "id": "1314717710",
+  "slug": "palindrome-number",
+  "title": "Palindrome Number",
+  "timestamp": 1720501534,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "10 ms",
+  "memory": "44.4 MB",
+  "key": "1720501534-palindrome-number",
+  "runtime_pct": 61.8509,
+  "memory_pct": 99.8929,
+  "passed": 11511,
+  "total": 11511,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0009-palindrome-number/2024-07-09_1314717710.java"
+ },
+ {
+  "id": "1314691598",
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "timestamp": 1720499952,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "3 ms",
+  "memory": "45 MB",
+  "key": "1720499952-two-sum",
+  "runtime_pct": 59.787699999999994,
+  "memory_pct": 99.95730000000002,
+  "passed": 63,
+  "total": 63,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0001-two-sum/2024-07-09_1314691598.java"
+ },
+ {
+  "id": "1314690475",
+  "slug": "two-sum",
+  "title": "Two Sum",
+  "timestamp": 1720499876,
+  "status": "Accepted",
+  "lang": "java",
+  "runtime": "3 ms",
+  "memory": "45 MB",
+  "key": "1720499876-two-sum",
+  "runtime_pct": 59.787699999999994,
+  "memory_pct": 99.95730000000002,
+  "passed": 63,
+  "total": 63,
+  "claims": {
+   "time": null,
+   "space": null
+  },
+  "solution_path": "solutions/0001-two-sum/2024-07-09_1314690475.java"
+ },
+ {
+  "id": "1313544425",
+  "slug": "pass-the-pillow",
+  "title": "Pass the Pillow",
+  "timestamp": 1720414868,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720414868-pass-the-pillow",
+  "passed": 43,
+  "total": 68,
+  "last_input": "18\n38",
+  "expected": "5",
+  "output": "1",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1313532633",
+  "slug": "pass-the-pillow",
+  "title": "Pass the Pillow",
+  "timestamp": 1720413987,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720413987-pass-the-pillow",
+  "passed": 47,
+  "total": 68,
+  "last_input": "18\n38",
+  "expected": "5",
+  "output": "3",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1313523921",
+  "slug": "pass-the-pillow",
+  "title": "Pass the Pillow",
+  "timestamp": 1720413317,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720413317-pass-the-pillow",
+  "passed": 47,
+  "total": 68,
+  "last_input": "18\n38",
+  "expected": "5",
+  "output": "3",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
+  "id": "1313518266",
+  "slug": "pass-the-pillow",
+  "title": "Pass the Pillow",
+  "timestamp": 1720412849,
+  "status": "Wrong Answer",
+  "lang": "java",
+  "runtime": "N/A",
+  "memory": "N/A",
+  "key": "1720412849-pass-the-pillow",
+  "passed": 7,
+  "total": 68,
+  "last_input": "9\n4",
+  "expected": "5",
+  "output": "9",
+  "claims": {
+   "time": null,
+   "space": null
+  }
  }
 ]

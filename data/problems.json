@@ -688,5 +688,238 @@
    "Matrix",
    "Simulation"
   ]
+ },
+ "pass-the-pillow": {
+  "id": 2582,
+  "title": "Pass the Pillow",
+  "difficulty": "Easy",
+  "tags": [
+   "Math",
+   "Simulation"
+  ]
+ },
+ "palindrome-number": {
+  "id": 9,
+  "title": "Palindrome Number",
+  "difficulty": "Easy",
+  "tags": [
+   "Math"
+  ]
+ },
+ "defanging-an-ip-address": {
+  "id": 1108,
+  "title": "Defanging an IP Address",
+  "difficulty": "Easy",
+  "tags": [
+   "String"
+  ]
+ },
+ "harshad-number": {
+  "id": 3099,
+  "title": "Harshad Number",
+  "difficulty": "Easy",
+  "tags": [
+   "Math"
+  ]
+ },
+ "running-sum-of-1d-array": {
+  "id": 1480,
+  "title": "Running Sum of 1d Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Prefix Sum"
+  ]
+ },
+ "ant-on-the-boundary": {
+  "id": 3028,
+  "title": "Ant on the Boundary",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Simulation",
+   "Prefix Sum"
+  ]
+ },
+ "find-lucky-integer-in-an-array": {
+  "id": 1394,
+  "title": "Find Lucky Integer in an Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Counting"
+  ]
+ },
+ "shuffle-the-array": {
+  "id": 1470,
+  "title": "Shuffle the Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array"
+  ]
+ },
+ "find-closest-number-to-zero": {
+  "id": 2239,
+  "title": "Find Closest Number to Zero",
+  "difficulty": "Easy",
+  "tags": [
+   "Array"
+  ]
+ },
+ "merge-strings-alternately": {
+  "id": 1768,
+  "title": "Merge Strings Alternately",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String"
+  ]
+ },
+ "maximum-number-of-balloons": {
+  "id": 1189,
+  "title": "Maximum Number of Balloons",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Counting"
+  ]
+ },
+ "is-subsequence": {
+  "id": 392,
+  "title": "Is Subsequence",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String",
+   "Dynamic Programming"
+  ]
+ },
+ "roman-to-integer": {
+  "id": 13,
+  "title": "Roman to Integer",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "Math",
+   "String"
+  ]
+ },
+ "longest-common-prefix": {
+  "id": 14,
+  "title": "Longest Common Prefix",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "String",
+   "Trie"
+  ]
+ },
+ "summary-ranges": {
+  "id": 228,
+  "title": "Summary Ranges",
+  "difficulty": "Easy",
+  "tags": [
+   "Array"
+  ]
+ },
+ "squares-of-a-sorted-array": {
+  "id": 977,
+  "title": "Squares of a Sorted Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Two Pointers",
+   "Sorting"
+  ]
+ },
+ "baseball-game": {
+  "id": 682,
+  "title": "Baseball Game",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Stack",
+   "Simulation"
+  ]
+ },
+ "richest-customer-wealth": {
+  "id": 1672,
+  "title": "Richest Customer Wealth",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Matrix"
+  ]
+ },
+ "linked-list-cycle": {
+  "id": 141,
+  "title": "Linked List Cycle",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "Linked List",
+   "Two Pointers",
+   "Floyd's Cycle Finding Algorithm"
+  ]
+ },
+ "product-sales-analysis-i": {
+  "id": 1068,
+  "title": "Product Sales Analysis I",
+  "difficulty": "Easy",
+  "tags": [
+   "Database"
+  ]
+ },
+ "find-the-index-of-the-first-occurrence-in-a-string": {
+  "id": 28,
+  "title": "Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String",
+   "String Matching",
+   "Z Algorithm",
+   "Knuth–Morris–Pratt Algorithm",
+   "Boyer–Moore String-Search Algorithm"
+  ]
+ },
+ "search-insert-position": {
+  "id": 35,
+  "title": "Search Insert Position",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Binary Search"
+  ]
+ },
+ "remove-duplicates-from-sorted-array": {
+  "id": 26,
+  "title": "Remove Duplicates from Sorted Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Two Pointers"
+  ]
+ },
+ "points-that-intersect-with-cars": {
+  "id": 2848,
+  "title": "Points That Intersect With Cars",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Prefix Sum"
+  ]
+ },
+ "find-all-numbers-disappeared-in-an-array": {
+  "id": 448,
+  "title": "Find All Numbers Disappeared in an Array",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table"
+  ]
  }
 }
