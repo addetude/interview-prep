@@ -1,0 +1,40 @@
+name: Log complexity
+description: Record the time/space complexity you identified (and optionally the real answer) for a problem.
+title: "complexity: "
+labels: [complexity-log]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: Problem (slug or LeetCode URL)
+      placeholder: two-sum
+    validations:
+      required: true
+  - type: input
+    id: submission
+    attributes:
+      label: Submission (optional; defaults to your latest accepted one)
+      description: Filled in automatically when you click "log" on the dashboard.
+  - type: input
+    id: my_time
+    attributes:
+      label: My time complexity
+      placeholder: O(n)
+  - type: input
+    id: my_space
+    attributes:
+      label: My space complexity
+      placeholder: O(1)
+  - type: input
+    id: actual_time
+    attributes:
+      label: Actual time complexity (optional; Claude grades it if left blank)
+  - type: input
+    id: actual_space
+    attributes:
+      label: Actual space complexity (optional)
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: What tripped you up, the pattern, what to remember next time.
