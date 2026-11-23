@@ -1,5 +1,5 @@
 name: Log complexity
-description: Record the time/space complexity you identified (and optionally the real answer) for a problem.
+description: Record the time/space complexity you identified and the real answer, to track whether you got it right.
 title: "complexity: "
 labels: [complexity-log]
 body:
@@ -28,11 +28,11 @@ body:
   - type: input
     id: actual_time
     attributes:
-      label: Actual time complexity (optional; Claude grades it if left blank)
+      label: Actual time complexity
   - type: input
     id: actual_space
     attributes:
-      label: Actual space complexity (optional)
+      label: Actual space complexity
   - type: textarea
     id: notes
     attributes:

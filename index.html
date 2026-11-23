@@ -210,8 +210,8 @@ function kpis(subs, probs) {
     ${tile("Problems solved", solved.length, `<span class="dots">${["Easy","Medium","Hard"].map(d => `<span class="dot"><i style="background:${DIFF_COLOR[d]}"></i>${byD(d)} ${d[0]}</span>`).join("")}</span>`)}
     ${tile("Submissions", subs.length, `${acc} accepted · ${pct(acc, subs.length)} acceptance`)}
     ${tile("Solved first try", pct(firstTry, solved.length), `${firstTry} of ${solved.length} solved problems`)}
-    ${tile("Time complexity right", pct(tOk, tN), tN ? `${tOk} of ${tN} graded` : "No graded answers yet")}
-    ${tile("Space complexity right", pct(sOk, sN), sN ? `${sOk} of ${sN} graded` : "No graded answers yet")}
+    ${tile("Time complexity right", pct(tOk, tN), tN ? `${tOk} of ${tN} checked` : "Log the actual complexity to track this")}
+    ${tile("Space complexity right", pct(sOk, sN), sN ? `${sOk} of ${sN} checked` : "Log the actual complexity to track this")}
     ${tile("Current streak", `${streak(DATA.submissions)}<span style="font-size:15px;font-weight:500;color:var(--ink-2)"> days</span>`, "Days in a row with an accepted solve")}
   </div>`;
 }
@@ -346,7 +346,7 @@ function cxCell(c, dim) {
   const mine = c?.[`my_${dim}`], actual = c?.[`actual_${dim}`], ok = c?.[`${dim}_ok`];
   if (!mine && !actual) return `<span class="muted">—</span>`;
   const mark = ok === true ? `<span class="ok" title="Correct">✓</span>` : ok === false ? `<span class="bad" title="Incorrect">✗</span>` : "";
-  const tipHtml = `<b>${dim === "time" ? "Time" : "Space"}</b><br>You: ${esc(mine || "not stated")}<br>Actual: ${esc(actual || "not graded")}${c.explanation ? "<br><br>" + esc(c.explanation) : ""}`;
+  const tipHtml = `<b>${dim === "time" ? "Time" : "Space"}</b><br>You: ${esc(mine || "not stated")}<br>Actual: ${esc(actual || "not logged yet")}${c.notes ? "<br><br>" + esc(c.notes) : ""}`;
   return `<span class="cx" data-tip="${esc(tipHtml)}">${mark} ${esc(mine || "?")}${ok === false && actual ? ` <span class="muted">→ ${esc(actual)}</span>` : ""}</span>`;
 }
 
@@ -354,7 +354,7 @@ function logLink(s) {
   if (!DATA.repo) return "";
   const q = new URLSearchParams({ template: "log-complexity.yml", title: `complexity: ${s.title}`, problem: s.slug, submission: s.key,
     my_time: s.complexity?.my_time || "", my_space: s.complexity?.my_space || "" });
-  return `<a href="https://github.com/${DATA.repo}/issues/new?${q}" target="_blank" rel="noopener" title="Log or correct your complexity">log</a>`;
+  return `<a href="https://github.com/${DATA.repo}/issues/new?${q}" target="_blank" rel="noopener" title="Log your complexity and the actual answer">log</a>`;
 }
 
 function log(subs) {
@@ -407,8 +407,7 @@ async function init() {
   if (DATA.repo) $("#sync-now").href = `https://github.com/${DATA.repo}/actions/workflows/sync.yml`; else $("#sync-now").remove();
   const b = [];
   if (DATA.auth === "expired") b.push("Your <b>LEETCODE_SESSION</b> secret has expired, so code, test-case details and complexity grading are paused. Paste a fresh cookie into the repo secrets.");
-  if (DATA.auth === "public") b.push("Running on public profile data only (no code, so no automatic complexity check). Add <b>LEETCODE_SESSION</b> and <b>LEETCODE_CSRF</b> secrets to unlock it.");
-  if (DATA.auth && DATA.auth !== "public" && DATA.grading === false) b.push("Add an <b>ANTHROPIC_API_KEY</b> secret to have each accepted solution's complexity checked automatically.");
+  if (DATA.auth === "public") b.push("Running on public profile data only (no code or failing test cases). Add <b>LEETCODE_SESSION</b> and <b>LEETCODE_CSRF</b> secrets to unlock it.");
   $("#banners").innerHTML = b.map(t => `<div class="banner">${t}</div>`).join("");
   render();
 }

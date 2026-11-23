@@ -47,13 +47,12 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: python scripts/log_issue.py
 
-      - name: Pull submissions & grade
+      - name: Pull submissions
         id: sync
         env:
           LEETCODE_USERNAME: ${{ vars.LEETCODE_USERNAME }}
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
           LEETCODE_CSRF: ${{ secrets.LEETCODE_CSRF }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python scripts/sync.py
 
       - name: Commit changes

@@ -1,4 +1,4 @@
-"""Pull new LeetCode submissions, enrich them, grade complexity, and rebuild data/dashboard.json.
+"""Pull new LeetCode submissions, enrich them, and rebuild data/dashboard.json.
 
 Run by .github/workflows/sync.yml; safe to run locally too:
     LEETCODE_USERNAME=you python scripts/sync.py
@@ -18,7 +18,6 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SOLUTIONS = ROOT / "solutions"
 MAX_PAGES = int(os.environ.get("MAX_PAGES", "10"))  # 20 submissions per page
-GRADE_LIMIT = int(os.environ.get("GRADE_LIMIT", "25"))  # Claude calls per run
 
 EXT = {
     "python": "py", "python3": "py", "java": "java", "cpp": "cpp", "c": "c", "csharp": "cs",
@@ -77,11 +76,6 @@ def save_solution(sub: dict, problem: dict) -> str | None:
     return str(path.relative_to(ROOT))
 
 
-def solution_code(sub: dict) -> str | None:
-    p = sub.get("solution_path")
-    return (ROOT / p).read_text() if p and (ROOT / p).exists() else None
-
-
 # ---------------------------------------------------------------------------
 def manual_for(subs: list[dict], manual: list[dict]) -> dict[str, dict]:
     """Map submission key -> your manual complexity entry (latest entry wins)."""
@@ -108,18 +102,14 @@ def effective_claims(sub: dict, m: dict | None) -> dict:
 
 def verdicts(sub: dict, m: dict | None) -> dict:
     claims = effective_claims(sub, m)
-    g = sub.get("grade") if (sub.get("grade") or {}).get("claims") == claims else None
     res = {"my_time": claims["time"], "my_space": claims["space"], "source": "manual" if m else "code"}
     for dim in ("time", "space"):
-        actual = (m or {}).get(f"actual_{dim}") or (g or {}).get(dim)
+        actual = (m or {}).get(f"actual_{dim}")
         correct = None
-        if claims[dim] and (m or {}).get(f"actual_{dim}"):
-            correct = complexity.normalize(claims[dim]) == complexity.normalize(m[f"actual_{dim}"])
-        elif g:
-            correct = g.get(f"{dim}_correct")
+        if claims[dim] and actual:
+            correct = complexity.normalize(claims[dim]) == complexity.normalize(actual)
         res[f"actual_{dim}"] = actual
         res[f"{dim}_ok"] = correct
-    res["explanation"] = (g or {}).get("explanation")
     res["notes"] = (m or {}).get("notes")
     return res
 
@@ -171,24 +161,6 @@ def main() -> None:
     subs = sorted(by_key.values(), key=lambda s: s["timestamp"], reverse=True)
     manual_map = manual_for(subs, manual)
 
-    # Grade accepted solutions whose claims changed (or were never graded).
-    graded = 0
-    for s in subs:
-        if s["status"] != "Accepted" or graded >= GRADE_LIMIT:
-            continue
-        claims = effective_claims(s, manual_map.get(s["key"]))
-        if (s.get("grade") or {}).get("claims") == claims:
-            continue
-        code = solution_code(s)
-        if not code:
-            continue
-        g = complexity.grade(problems[s["slug"]]["title"], s["lang"], code, claims)
-        if g is None:
-            break  # no API key or API unavailable; try again next run
-        s["grade"] = g.model_dump() | {"claims": claims}
-        graded += 1
-        print(f"  ~ graded {s['title']}: time {g.time} ({g.time_correct}), space {g.space} ({g.space_correct})")
-
     state["last_sync"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     save("submissions.json", subs)
     save("problems.json", problems)
@@ -199,7 +171,6 @@ def main() -> None:
         "username": lc.username,
         "repo": os.environ.get("GITHUB_REPOSITORY"),
         "auth": state["auth"],
-        "grading": bool(os.environ.get("ANTHROPIC_API_KEY")),
         "submissions": [
             {
                 **{k: s.get(k) for k in (
@@ -214,9 +185,9 @@ def main() -> None:
     save("dashboard.json", dashboard)
 
     acc = sum(1 for s in new if s["status"] == "Accepted")
-    msg = f"sync: {len(new)} new submission(s), {acc} accepted" + (f", {graded} graded" if graded else "")
+    msg = f"sync: {len(new)} new submission(s), {acc} accepted"
     if not new:
-        msg = "sync: refresh" + (f" ({graded} graded)" if graded else "")
+        msg = "sync: refresh"
     if out := os.environ.get("GITHUB_OUTPUT"):
         with open(out, "a") as f:
             f.write(f"message={msg}\n")

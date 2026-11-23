@@ -1,12 +1,11 @@
 # Interview Prep Dashboard
 
-Every time you submit on LeetCode, a GitHub Action checks your submissions. It logs each attempt (Accepted, Wrong Answer, TLE, and so on), saves accepted code into `solutions/`, checks the time and space complexity you wrote down, commits the result, and redeploys your dashboard to GitHub Pages.
+Every time you submit on LeetCode, a GitHub Action checks your submissions. It logs each attempt (Accepted, Wrong Answer, TLE, and so on), saves accepted code into `solutions/`, records the time and space complexity you wrote down, commits the result, and redeploys your dashboard to GitHub Pages.
 
 ```
 LeetCode submit ──► GitHub Action (every ~15 min, or "Run workflow")
                       ├─ scripts/sync.py     pulls new submissions + failing test cases
-                      ├─ complexity.py       reads "Time: O(..) Space: O(..)" from your code,
-                      │                      Claude checks it against the real complexity
+                      ├─ complexity.py       reads "Time: O(..) Space: O(..)" from your code
                       ├─ git commit          data/*.json + solutions/<id>-<slug>/...
                       └─ deploy Pages        index.html reads data/dashboard.json
 ```
@@ -21,7 +20,6 @@ LeetCode submit ──► GitHub Action (every ~15 min, or "Run workflow")
    | Variable | `LEETCODE_USERNAME` | your LeetCode username | everything |
    | Secret | `LEETCODE_SESSION` | `LEETCODE_SESSION` cookie from leetcode.com | your code, failing test cases, older history |
    | Secret | `LEETCODE_CSRF` | `csrftoken` cookie from leetcode.com | (same) |
-   | Secret | `ANTHROPIC_API_KEY` | Claude API key | automatic complexity grading |
 
    To get the cookies: log in at leetcode.com, open DevTools → Application → Cookies → `https://leetcode.com`, and copy the two values. They expire every few weeks. When that happens the dashboard shows a banner and falls back to public data until you paste in fresh ones.
 4. **Actions tab → "Sync LeetCode" → Run workflow.** The first run backfills up to 200 recent submissions.
@@ -30,7 +28,7 @@ With only the username set, the dashboard still tracks every verdict from your p
 
 ## Tracking complexity
 
-**Automatic:** put your answer in a comment while you solve. You should be saying it out loud in an interview anyway:
+**1. State your answer** in a comment while you solve (you should be saying it out loud in an interview anyway):
 
 ```python
 # Time: O(n log n)
@@ -38,9 +36,9 @@ With only the username set, the dashboard still tracks every verdict from your p
 class Solution: ...
 ```
 
-`TC = O(n)`, `time complexity - O(n^2)` and `SC: O(h)` also work. For each accepted submission, Claude works out the actual complexity of *your* code and marks your answer ✓ or ✗ with a one-line explanation (hover the cell on the dashboard). Grading costs a fraction of a cent per solution. If you change your answer, that solution is graded again.
+`TC = O(n)`, `time complexity - O(n^2)` and `SC: O(h)` also work. The sync picks it up automatically (needs the cookie secrets, since that's how it reads your code).
 
-**Manual:** click **log** on any row in the dashboard, or open a *Log complexity* issue. You can add or correct your answer, give the real answer yourself, and write notes. The workflow records it in `data/manual.json`, closes the issue, and redeploys. Manual entries take priority over code comments. Only issues you open yourself are processed.
+**2. Log the actual answer:** after checking the editorial or discussion, click **log** on that row in the dashboard. It opens a pre-filled *Log complexity* issue. Fill in the actual time and space (and fix your own answer if the comment was missing), add notes, and submit. The workflow records it in `data/manual.json`, closes the issue, and redeploys. The row then shows ✓ or ✗, and the accuracy tiles update. Notation is compared loosely, so `O(n log n)` matches `O(N*logN)`. Only issues you open yourself are processed.
 
 ## What's on the dashboard
 
@@ -65,4 +63,4 @@ python -m http.server   # open http://localhost:8000
 ## Knobs
 
 - Sync interval: `cron` in `.github/workflows/sync.yml`. GitHub may delay scheduled runs, and pauses them after 60 days without repo activity.
-- `MAX_PAGES` (backfill depth, 20 per page) and `GRADE_LIMIT` (Claude calls per run) are env vars on the sync step.
+- `MAX_PAGES` (backfill depth, 20 per page) is an env var on the sync step.
