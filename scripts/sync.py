@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import complexity
-from leetcode import AuthExpired, LeetCode
+from leetcode import AuthExpired, Blocked, LeetCode
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -44,9 +44,19 @@ def key_of(s: dict) -> str:
 def fetch_new(lc: LeetCode, known: set[str], state: dict) -> list[dict]:
     if lc.authed:
         try:
+            me = lc.signed_in_as()
+            if not me:
+                raise AuthExpired()
+            print(f"Signed in to LeetCode as {me}")
+            page = lc.submissions_page
+            try:
+                page(0)
+            except Blocked:
+                print("  REST endpoint refused; using GraphQL instead")
+                page = lc.submissions_page_gql
             out, offset, lastkey = [], 0, ""
             for _ in range(MAX_PAGES):
-                rows, has_next, lastkey = lc.submissions_page(offset, lastkey)
+                rows, has_next, lastkey = page(offset, lastkey)
                 fresh = [r for r in rows if key_of(r) not in known]
                 out += fresh
                 if len(fresh) < len(rows) or not has_next:
@@ -56,8 +66,12 @@ def fetch_new(lc: LeetCode, known: set[str], state: dict) -> list[dict]:
             state["auth"] = "ok"
             return out
         except AuthExpired:
-            print("! LEETCODE_SESSION looks expired; falling back to public data (no code / test details)")
+            print("! LeetCode says these cookies aren't signed in (expired or copied wrong); using public data")
             state["auth"] = "expired"
+            lc.authed = False
+        except Exception as e:
+            print(f"! Signed-in fetch failed ({e!r}); using public data this run")
+            state["auth"] = "blocked"
             lc.authed = False
     else:
         state["auth"] = "public"
@@ -136,6 +150,7 @@ def main() -> None:
             time.sleep(0.5)
         if lc.authed and s.get("id"):
             d = lc.submission_details(s["id"])
+            s["code"] = s.get("code") or d.get("code")
             s.update(
                 runtime=d.get("runtimeDisplay") or s.get("runtime"),
                 memory=d.get("memoryDisplay") or s.get("memory"),

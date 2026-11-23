@@ -406,7 +406,8 @@ async function init() {
   }
   if (DATA.repo) $("#sync-now").href = `https://github.com/${DATA.repo}/actions/workflows/sync.yml`; else $("#sync-now").remove();
   const b = [];
-  if (DATA.auth === "expired") b.push("Your <b>LEETCODE_SESSION</b> secret has expired, so code, test-case details and complexity grading are paused. Paste a fresh cookie into the repo secrets.");
+  if (DATA.auth === "expired") b.push("LeetCode rejected your <b>LEETCODE_SESSION</b> / <b>LEETCODE_CSRF</b> cookies (expired or copied wrong), so code and test-case details are paused. Paste fresh values into the repo secrets.");
+  if (DATA.auth === "blocked") b.push("Signed in, but LeetCode refused the submission request this run. Showing public data; check the latest Sync LeetCode run log.");
   if (DATA.auth === "public") b.push("Running on public profile data only (no code or failing test cases). Add <b>LEETCODE_SESSION</b> and <b>LEETCODE_CSRF</b> secrets to unlock it.");
   $("#banners").innerHTML = b.map(t => `<div class="banner">${t}</div>`).join("");
   render();

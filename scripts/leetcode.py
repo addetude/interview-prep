@@ -11,7 +11,11 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) interview-prep-dashboard"
 
 
 class AuthExpired(Exception):
-    pass
+    """Cookies rejected: LeetCode says we're not signed in."""
+
+
+class Blocked(Exception):
+    """Signed in, but the request was refused (e.g. bot protection on CI runners)."""
 
 
 class LeetCode:
@@ -82,6 +86,35 @@ class LeetCode:
         }
 
     # ---- authenticated ---------------------------------------------------
+    def signed_in_as(self) -> str | None:
+        d = self.gql("query { userStatus { isSignedIn username } }").get("userStatus") or {}
+        return d.get("username") if d.get("isSignedIn") else None
+
+    def submissions_page_gql(self, offset: int, lastkey: str = "") -> tuple[list[dict], bool, str]:
+        q = """query s($offset: Int!, $limit: Int!, $lastKey: String) {
+          submissionList(offset: $offset, limit: $limit, lastKey: $lastKey) {
+            lastKey hasNext
+            submissions { id title titleSlug timestamp statusDisplay lang runtime memory isPending }
+          }
+        }"""
+        d = self.gql(q, {"offset": offset, "limit": 20, "lastKey": lastkey or None}).get("submissionList") or {}
+        rows = [
+            {
+                "id": str(s["id"]),
+                "slug": s["titleSlug"],
+                "title": s["title"],
+                "timestamp": int(s["timestamp"]),
+                "status": s["statusDisplay"],
+                "lang": s["lang"],
+                "runtime": s.get("runtime"),
+                "memory": s.get("memory"),
+                "code": None,  # filled from submissionDetails
+            }
+            for s in d.get("submissions") or []
+            if s.get("isPending") in (None, "Not Pending")
+        ]
+        return rows, bool(d.get("hasNext")), d.get("lastKey") or ""
+
     def submissions_page(self, offset: int, lastkey: str = "") -> tuple[list[dict], bool, str]:
         r = self.http.get(
             f"{BASE}/api/submissions/",
@@ -89,12 +122,10 @@ class LeetCode:
             timeout=30,
             allow_redirects=False,
         )
-        if r.status_code in (301, 302, 401, 403):
-            raise AuthExpired()
-        r.raise_for_status()
+        if r.status_code != 200 or "submissions_dump" not in r.text[:5000]:
+            print(f"  ! /api/submissions/ returned HTTP {r.status_code}: {r.text[:200]!r}")
+            raise Blocked()
         body = r.json()
-        if "submissions_dump" not in body:
-            raise AuthExpired()
         rows = []
         for s in body["submissions_dump"]:
             if s.get("is_pending") not in (None, "Not Pending"):
@@ -117,7 +148,7 @@ class LeetCode:
     def submission_details(self, submission_id: str) -> dict:
         q = """query d($submissionId: Int!) {
           submissionDetails(submissionId: $submissionId) {
-            runtimeDisplay runtimePercentile memoryDisplay memoryPercentile
+            code runtimeDisplay runtimePercentile memoryDisplay memoryPercentile
             totalCorrect totalTestcases lastTestcase codeOutput expectedOutput
             runtimeError compileError
           }
