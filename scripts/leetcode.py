@@ -67,6 +67,20 @@ class LeetCode:
             for r in rows
         ]
 
+    def solved_counts(self) -> dict:
+        """LeetCode's own solved-problem counts, e.g. {"All": 91, "Easy": 50, ...}."""
+        q = """query p($username: String!) {
+          matchedUser(username: $username) {
+            submitStatsGlobal { acSubmissionNum { difficulty count } }
+          }
+        }"""
+        try:
+            d = self.gql(q, {"username": self.username}).get("matchedUser") or {}
+            return {r["difficulty"]: r["count"] for r in d["submitStatsGlobal"]["acSubmissionNum"]}
+        except Exception as e:
+            print(f"  ! could not fetch profile counts: {e}")
+            return {}
+
     def question(self, slug: str) -> dict:
         q = """query q($titleSlug: String!) {
           question(titleSlug: $titleSlug) {

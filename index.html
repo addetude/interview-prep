@@ -207,13 +207,23 @@ function kpis(subs, probs) {
   const sOk = graded.filter(s => s.complexity.space_ok === true).length, sN = graded.filter(s => s.complexity.space_ok != null).length;
   const tile = (label, value, detail) => `<div class="card kpi"><div class="label">${label}</div><div class="value">${value}</div><div class="detail">${detail}</div></div>`;
   return `<div class="grid kpis">
-    ${tile("Problems solved", solved.length, `<span class="dots">${["Easy","Medium","Hard"].map(d => `<span class="dot"><i style="background:${DIFF_COLOR[d]}"></i>${byD(d)} ${d[0]}</span>`).join("")}</span>`)}
+    ${solvedTile(solved, byD, tile)}
     ${tile("Submissions", subs.length, `${acc} accepted · ${pct(acc, subs.length)} acceptance`)}
     ${tile("Solved first try", pct(firstTry, solved.length), `${firstTry} of ${solved.length} solved problems`)}
     ${tile("Time complexity right", pct(tOk, tN), tN ? `${tOk} of ${tN} checked` : "Log the actual complexity to track this")}
     ${tile("Space complexity right", pct(sOk, sN), sN ? `${sOk} of ${sN} checked` : "Log the actual complexity to track this")}
     ${tile("Current streak", `${streak(DATA.submissions)}<span style="font-size:15px;font-weight:500;color:var(--ink-2)"> days</span>`, "Days in a row with an accepted solve")}
   </div>`;
+}
+
+function solvedTile(solved, byD, tile) {
+  // With no filters, show LeetCode's official count (matches your profile); otherwise the synced count.
+  const p = DATA.profile_solved;
+  const official = p && p.All != null && !state.days && !state.diff;
+  const n = d => official ? (p[d] ?? 0) : byD(d);
+  const dots = `<span class="dots">${["Easy","Medium","Hard"].map(d => `<span class="dot"><i style="background:${DIFF_COLOR[d]}"></i>${n(d)} ${d[0]}</span>`).join("")}</span>`;
+  const gap = official && p.All > solved.length ? `<div style="margin-top:4px">${solved.length} in synced history</div>` : "";
+  return tile("Problems solved", official ? p.All : solved.length, dots + gap);
 }
 
 function heatmap(all) {

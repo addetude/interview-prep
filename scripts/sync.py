@@ -17,7 +17,8 @@ from leetcode import AuthExpired, LeetCode
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SOLUTIONS = ROOT / "solutions"
-MAX_PAGES = int(os.environ.get("MAX_PAGES", "10"))  # 20 submissions per page
+MAX_PAGES = int(os.environ.get("MAX_PAGES", "10"))  # 20 submissions per page, for routine syncs
+BACKFILL_PAGES = 1000  # first signed-in sync walks your whole history
 
 EXT = {
     "python": "py", "python3": "py", "java": "java", "cpp": "cpp", "c": "c", "csharp": "cs",
@@ -48,16 +49,28 @@ def fetch_new(lc: LeetCode, known: set[str], state: dict) -> list[dict]:
             if not me:
                 raise AuthExpired()
             print(f"Signed in to LeetCode as {me}")
+            backfill = not state.get("backfilled")
+            if backfill:
+                print("Backfilling your full submission history (one time)...")
             out, offset, lastkey = [], 0, ""
-            for _ in range(MAX_PAGES):
-                rows, has_next, lastkey = lc.submissions_page(offset, lastkey)
+            for _ in range(BACKFILL_PAGES if backfill else MAX_PAGES):
+                try:
+                    rows, has_next, lastkey = lc.submissions_page(offset, lastkey)
+                except Exception as e:
+                    if not out:
+                        raise
+                    print(f"  ! stopped after {len(out)} submissions ({e!r}); will continue next sync")
+                    state["auth"] = "ok"
+                    return out
                 fresh = [r for r in rows if key_of(r) not in known]
                 out += fresh
-                if len(fresh) < len(rows) or not has_next:
+                if not has_next or (not backfill and len(fresh) < len(rows)):
                     break
                 offset += 20
                 time.sleep(1.5)
             state["auth"] = "ok"
+            if backfill and not has_next:
+                state["backfilled"] = True
             return out
         except AuthExpired:
             print("! LeetCode says these cookies aren't signed in (expired or copied wrong); using public data")
@@ -170,6 +183,7 @@ def main() -> None:
     subs = sorted(by_key.values(), key=lambda s: s["timestamp"], reverse=True)
     manual_map = manual_for(subs, manual)
 
+    state["profile"] = lc.solved_counts() or state.get("profile", {})
     state["last_sync"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     save("submissions.json", subs)
     save("problems.json", problems)
@@ -180,6 +194,7 @@ def main() -> None:
         "username": lc.username,
         "repo": os.environ.get("GITHUB_REPOSITORY"),
         "auth": state["auth"],
+        "profile_solved": state.get("profile"),
         "submissions": [
             {
                 **{k: s.get(k) for k in (
