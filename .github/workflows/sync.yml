@@ -11,6 +11,7 @@ on:
     paths: ["index.html", "data/manual.json"]
 
 permissions:
+  actions: read
   contents: write
   issues: write
   pages: write
@@ -77,13 +78,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }} --comment "Logged ✅ — the dashboard will update in a minute."
 
-  deploy:
+  build-pages:
     needs: sync
     if: needs.sync.outputs.changed == 'true' || github.event_name != 'schedule'
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -92,5 +90,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .
+
+  deploy:
+    needs: build-pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v5
