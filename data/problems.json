@@ -1,0 +1,164 @@
+{
+ "first-unique-character-in-a-string": {
+  "id": 387,
+  "title": "First Unique Character in a String",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Queue",
+   "Counting"
+  ]
+ },
+ "permutation-in-string": {
+  "id": 567,
+  "title": "Permutation in String",
+  "difficulty": "Medium",
+  "tags": [
+   "Hash Table",
+   "Two Pointers",
+   "String",
+   "Sliding Window"
+  ]
+ },
+ "asteroid-collision": {
+  "id": 735,
+  "title": "Asteroid Collision",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Stack",
+   "Simulation"
+  ]
+ },
+ "lru-cache": {
+  "id": 146,
+  "title": "LRU Cache",
+  "difficulty": "Medium",
+  "tags": [
+   "Hash Table",
+   "Linked List",
+   "Design",
+   "Doubly-Linked List"
+  ]
+ },
+ "number-of-islands": {
+  "id": 200,
+  "title": "Number of Islands",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Depth-First Search",
+   "Breadth-First Search",
+   "Union-Find",
+   "Matrix"
+  ]
+ },
+ "range-sum-query-2d-immutable": {
+  "id": 304,
+  "title": "Range Sum Query 2D - Immutable",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Design",
+   "Matrix",
+   "Prefix Sum"
+  ]
+ },
+ "missing-number": {
+  "id": 268,
+  "title": "Missing Number",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Math",
+   "Binary Search",
+   "Bit Manipulation",
+   "Sorting"
+  ]
+ },
+ "contains-duplicate": {
+  "id": 217,
+  "title": "Contains Duplicate",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Sorting"
+  ]
+ },
+ "valid-anagram": {
+  "id": 242,
+  "title": "Valid Anagram",
+  "difficulty": "Easy",
+  "tags": [
+   "Hash Table",
+   "String",
+   "Sorting"
+  ]
+ },
+ "two-sum": {
+  "id": 1,
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "tags": [
+   "Array",
+   "Hash Table"
+  ]
+ },
+ "group-anagrams": {
+  "id": 49,
+  "title": "Group Anagrams",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "String",
+   "Sorting"
+  ]
+ },
+ "top-k-frequent-elements": {
+  "id": 347,
+  "title": "Top K Frequent Elements",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Divide and Conquer",
+   "Sorting",
+   "Heap (Priority Queue)",
+   "Bucket Sort",
+   "Counting",
+   "Quickselect"
+  ]
+ },
+ "product-of-array-except-self": {
+  "id": 238,
+  "title": "Product of Array Except Self",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Prefix Sum"
+  ]
+ },
+ "longest-consecutive-sequence": {
+  "id": 128,
+  "title": "Longest Consecutive Sequence",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Hash Table",
+   "Union-Find"
+  ]
+ },
+ "valid-palindrome": {
+  "id": 125,
+  "title": "Valid Palindrome",
+  "difficulty": "Easy",
+  "tags": [
+   "Two Pointers",
+   "String"
+  ]
+ }
+}
