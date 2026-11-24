@@ -1,5 +1,17 @@
 [
  {
+  "slug": "two-sum-ii-input-array-is-sorted",
+  "title": "Two Sum II - Input Array Is Sorted",
+  "timestamp": 1795538785,
+  "status": "Accepted",
+  "lang": "python",
+  "key": "1795538785-two-sum-ii-input-array-is-sorted",
+  "claims": {
+   "time": null,
+   "space": null
+  }
+ },
+ {
   "id": "2199496827",
   "slug": "valid-palindrome",
   "title": "Valid Palindrome",
