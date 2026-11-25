@@ -1,11 +1,11 @@
 {
  "auth": "expired",
- "last_sync": "2026-11-24T17:00:22+00:00",
+ "last_sync": "2026-11-25T00:41:02+00:00",
  "backfilled": true,
  "profile": {
-  "All": 91,
+  "All": 92,
   "Easy": 75,
-  "Medium": 16,
+  "Medium": 17,
   "Hard": 0
  }
 }

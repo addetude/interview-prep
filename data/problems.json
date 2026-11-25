@@ -921,5 +921,15 @@
    "Array",
    "Hash Table"
   ]
+ },
+ "3sum": {
+  "id": 15,
+  "title": "3Sum",
+  "difficulty": "Medium",
+  "tags": [
+   "Array",
+   "Two Pointers",
+   "Sorting"
+  ]
  }
 }

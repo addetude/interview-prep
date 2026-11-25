@@ -1,15 +1,50 @@
 {
- "generated_at": "2026-11-24T17:00:22+00:00",
+ "generated_at": "2026-11-25T00:41:02+00:00",
  "username": "addetude",
  "repo": "addetude/interview-prep",
  "auth": "expired",
  "profile_solved": {
-  "All": 91,
+  "All": 92,
   "Easy": 75,
-  "Medium": 16,
+  "Medium": 17,
   "Hard": 0
  },
  "submissions": [
+  {
+   "key": "1795541348-3sum",
+   "id": 15,
+   "slug": "3sum",
+   "timestamp": 1795541348,
+   "status": "Accepted",
+   "lang": "python",
+   "runtime": null,
+   "memory": null,
+   "runtime_pct": null,
+   "passed": null,
+   "total": null,
+   "last_input": null,
+   "expected": null,
+   "output": null,
+   "error": null,
+   "solution_path": null,
+   "title": "3Sum",
+   "difficulty": "Medium",
+   "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+   ],
+   "complexity": {
+    "my_time": null,
+    "my_space": null,
+    "source": "code",
+    "actual_time": null,
+    "time_ok": null,
+    "actual_space": null,
+    "space_ok": null,
+    "notes": null
+   }
+  },
   {
    "key": "1795538785-two-sum-ii-input-array-is-sorted",
    "id": 167,
